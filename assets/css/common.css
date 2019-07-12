@@ -1,4 +1,38 @@
 html{
-  color: #FFFFF0;
-  background: #708090;
+  color: #333;
+  background: #fff;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  color: #333;
+}
+
+li{
+  list-style-position: inside;
+}
+
+.mb_s{
+  margin-bottom: 20px;
+}
+
+.mb_m{
+  margin-bottom: 20px;
+}
+
+.mb_l{
+  margin-bottom: 40px;
 }
