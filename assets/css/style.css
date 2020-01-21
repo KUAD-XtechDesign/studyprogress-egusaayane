@@ -1,5 +1,7 @@
-@charset "UTF-8";
-
-h1{
-  background-color: rgb(0, 128, 128);
+.dekai_pic{
+  margin: 0;
+ text-align: center;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ width:"800";
 }
