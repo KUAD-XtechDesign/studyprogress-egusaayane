@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/popup.css">
+    <script type="text/javascript" src="jquery-3.4.1.min.js">
+    </script>
+    <script src="./assets/js/style.js"></script>
+</head>
+
+    <body>
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal01">クリックでモーダル1を表示</a><br>
+            <a class="js-modal-open" href="" data-target="modal02">クリックでモーダル2を表示</a>
+        </div>
+        <div id="modal01" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <p>1つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+        <div id="modal02" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <p>2つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+    </body>
