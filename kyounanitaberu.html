@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>今日何食べる？</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<center>
+    <style type="text/css">
+        table,td {
+            border:solid 1px salmon;
+            font-size:90px;
+            text-align:center;
+        }
+        #box {
+            margin:auto;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+    $(function() {
+      var l=$('#t1 td').length;
+      var a
+      var timerId;
+       $(document).on('click','[id=start]',function() {
+        timerId=setInterval(function() {
+        var rand = Math.floor(Math.random() * l);
+        $('#t1 td').css({"background-Color":"salmon"});
+        $('#t1 td').eq(rand).css({"background-Color":"white"});
+        },100);
+      });
+      $(document).on('click','[id=stop]',function() {
+        clearInterval(timerId);
+      })
+    })
+
+    </script>
+<font size="5">
+      <h1>●○● 今日何食べる? ●○●</h1></font size="7">
+        <img src="./assets/nanitabe_gazou/syokuji_okazu_noseru.png" width="200" height="200"><p>
+        </p>
+        ルーレットだよ
+    <table id="t1">
+        <tr><td>01</td><td>02</td><td>03</td><td>04</td></tr>
+        <tr><td>05</td><td>06</td><td>07</td><td>08</td></tr>
+        <tr><td>09</td><td>10</td><td>11</td><td>12</td></tr>
+    </table>
+    <button id="start"> 　選ぶ 　</button>
+    <button id="stop">　決める　</button>
+<p>
+</p>
+<h2>↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br>
+↓<br></h2>
+<p>
+</p>
+<table>
+  <tr><td><img src="./assets/nanitabe_gazou/food_mugi_meshi.png" title="1.麦ご飯" width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/food_nimono_satsumaimo.png" title="2.さつまいもの煮物"　width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/food_tonjiru.png" title="3.豚汁"　width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/dna_idenshi_kumikae.png" title="4.遺伝子組み換えの食べ物"　width="120" height="120"></td></tr>
+  <tr><td><img src="./assets/nanitabe_gazou/food_kasube_nitsuke.png" title="5.カスベの煮付け"　width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/syokuji_steak_woman.png" title="6.ステーキ"　width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/food_moyashi_itame.png" title="7.もやし炒め"　width="120" height="110"></td>
+  <td><img src="./assets/nanitabe_gazou/food_moyashi_niku_itame.png" title="8.もやしと肉炒め" width="135" height="120"></td></tr>
+  <tr><td><img src="./assets/nanitabe_gazou/food_ramen_ishiki.png" title="9.意識高い系ラーメン"　width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/food_fugusashi.png" title="10.ふぐ刺し"　width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/food_apple_yakiringo_marugoto.png" title="11.丸ごと焼きりんご" width="120" height="120"></td>
+  <td><img src="./assets/nanitabe_gazou/food_kanpyou.png" title="12.かんぴょう"　width="120" height="120"></td></tr>
+</table><p>
+</p>
+<h2>これで一品決まったね(^o^)</h2>
+
+</body>
+</center>
+</html>
